@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    background: #f1f5f8;
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container{
+    width: 100%;
+    max-width: 500px;
+    background:transparent;
+    border-radius: 10px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    position: relative;
+}
+.container h2{
+    font-size: 30px;
+    font-weight: 700;
+    color: #2f3542;
+    margin-bottom: 20px;
+}
+.container h2 span{
+    color:#49a6e9;  
+}
+img{
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+.name,.job{
+    font-size: 1rem;
+    font-weight: 200;
+    color: #49a6e9;
+    margin: 20px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+.job{
+    color: #617d98;
+}
+.text{
+    font-size: 1rem;
+    font-weight: 200;
+    color: #617d98;
+    margin-top: 20px;
+    text-align: center;
+    letter-spacing: 1px;
+}
+.quote{
+   
+    display: flex; 
+}
+.quote span{
+    color: #49a6e9;
+    font-size: 7rem;
+    font-weight: 700;
+    text-align: center;
+    letter-spacing: 1px;
+    margin-left: 20px;
+}
+.btn-right, .btn-left{
+    width: 40px;
+    height: 40px;
+    color:#fff ;
+    background: #102a42;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    border-radius: 5px;
+}
+.btn-right{
+    right: 0%;
+}
+.btn-left{
+    left: 0%;
+}
