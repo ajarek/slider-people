@@ -1,3 +1,5 @@
+import {fetchPerson} from "./fetchPerson.js"; 
+
 export const people = [
     {
       img:
@@ -20,7 +22,28 @@ export const people = [
       job: "designer",
       text: `Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem quoeius recusandae officia voluptas sint deserunt dicta nihil nam omnis?`,
     },
+    {
+      img:
+        "https://randomuser.me/api/portraits/women/76.jpg",
+      name: "jennie nichols",
+      job: "designer",
+      text: `Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem quoeius recusandae officia voluptas sint deserunt dicta nihil nam omnis?`,
+    },
+    {
+      img:
+        "https://randomuser.me/api/portraits/men/32.jpg",
+      name: "john rusell",
+      job: "designer",
+      text: `Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem quoeius recusandae officia voluptas sint deserunt dicta nihil nam omnis?`,
+    },
   ];
-  
-  
+  fetchPerson()
+  .then(data=>{
+    people.push(...data);
+  }
+  )
+  .catch(err=>{
+    console.log(err);
+  }
+  )
   
